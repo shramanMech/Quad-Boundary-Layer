@@ -30,7 +30,5 @@ Final mesh
 Mach contour on the final mesh
 
 ![09_noquad_closeup](https://github.com/user-attachments/assets/ae3fd9f6-6a68-440c-bad0-610d21af08ed)
-Close-up at the boundary and shock (fixed BL)
+Close-up at the boundary and shock
 
-![09_quad_closeup](https://github.com/user-attachments/assets/38ebfbe2-c26c-43d0-a80a-abdfaf2385f5)
-Close-up at the boundary and shock (moving BL)
