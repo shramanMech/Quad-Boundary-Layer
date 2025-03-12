@@ -212,7 +212,6 @@ def hyptangrid(delmin1, delmin2, p1, p2, nninit):
    b = 1.0/(nn*np.sqrt(delmin1*delmin2))
    delta0 = 20.0
    delta = newtonraph(delta0, b)
-   #delta = analyticdelta(b)
    s = np.zeros(nn)
    s[nn-2] = 0.99
    s[nn-3] = 0.99 - 2.0*delmin2
