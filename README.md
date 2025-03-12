@@ -29,6 +29,6 @@ Final mesh
 ![09_noquad_mach](https://github.com/user-attachments/assets/98b8f7c4-798e-49b1-83a5-ba0cc04b67e3)
 Mach contour on the final mesh
 
-![09_noquad_closeup](https://github.com/user-attachments/assets/ae3fd9f6-6a68-440c-bad0-610d21af08ed)
+![09_quad_closeup](https://github.com/user-attachments/assets/94e5e4f5-cc1b-45d6-be4f-b889b1a8f0fa)
 Close-up at the boundary and shock
 
