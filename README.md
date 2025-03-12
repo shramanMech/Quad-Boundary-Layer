@@ -9,4 +9,28 @@ Here, the Python code *move-boundary.py* takes in a hybrid mesh in *.su2* format
 
 **Limitations:** The code only adjusts the quad layers by moving them. It does not add layers to ensure an optimal number of layers. This is a WIP and will be added soon. 
 
-*test cases will be added soon*
+# Test Cases 
+
+**2D HEG Cylinder**
+For this case, a RANS simulation was performed on a cylinder using METACOMP's CFD++ solver. The original experimental study can be found here: [HEG Cylinder Experiment](https://arc.aiaa.org/doi/10.2514/6.2003-4252). 
+The simulation was performed considering a viscous, laminar and chemical and thermal non-equilibrium flow. A similar simulation was performed using SU2-NEMO that can be found [here](https://www.mdpi.com/2226-4310/8/7/193). 
+
+The initial mesh had *20577 cells (17737 tri and 2840 quad)*. In the final adaptation (9th run), the number of triangles was around 74000, and the number of quads was fixed at 2840. 
+
+![00_noquad_mesh](https://github.com/user-attachments/assets/6132d02c-5097-4208-ab4f-a7d347c3fb98)
+Initial mesh. 
+
+![00_noquad_mach](https://github.com/user-attachments/assets/69336ace-e205-4d6d-bf71-f25847487527)
+Mach contour on the initial mesh. 
+
+![09_noquad_mesh](https://github.com/user-attachments/assets/5e858afe-52b3-45b9-9a38-de6120495c41)
+Final mesh
+
+![09_noquad_mach](https://github.com/user-attachments/assets/98b8f7c4-798e-49b1-83a5-ba0cc04b67e3)
+Mach contour on the final mesh
+
+![09_noquad_closeup](https://github.com/user-attachments/assets/ae3fd9f6-6a68-440c-bad0-610d21af08ed)
+Close-up at the boundary and shock (fixed BL)
+
+![09_quad_closeup](https://github.com/user-attachments/assets/38ebfbe2-c26c-43d0-a80a-abdfaf2385f5)
+Close-up at the boundary and shock (moving BL)
