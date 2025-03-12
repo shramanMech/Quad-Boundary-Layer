@@ -8,3 +8,5 @@ For more information on how metric field-based mesh adaptation is carried out, p
 Here, the Python code *move-boundary.py* takes in a hybrid mesh in *.su2* format and adjusts the height of the layers parallel to the streamwise direction. The adjustment for the first layer height is made based on the y+ values obtained after every simulation (as the entire mesh adaptation workflow involves multiple simulations). The final layer height is obtained by finding out the average size of the triangles/tets at the interface of the quad boundary and the unstructured region to ensure a smooth transition in the sizes of the cells. The sizes of the layers between the first and the last layer transition smoothly using a [hyperbolic tangent function](https://www.cfd-online.com/Wiki/Structured_mesh_generation).
 
 **Limitations:** The code only adjusts the quad layers by moving them. It does not add layers to ensure an optimal number of layers. This is a WIP and will be added soon. 
+
+*test cases will be added soon*
