@@ -1,6 +1,6 @@
 import numpy as np
 
-fp1 = "mach-adapted-mesh.su2"
+fp1 = "inputmesh.su2"
 
 nodes = []
 cells = []
@@ -339,7 +339,7 @@ linesMod.append("NMARK= " + str(num_tags))
 for tag in tags:
     linesMod.append(tag)
 
-with open("mach-adapted-mesh-mod.su2", 'w') as file:
+with open("inputmesh-mod.su2", 'w') as file:
     for line in linesMod:
         if isinstance(line, list):  
             file.write(" ".join(map(str, line)) + '\n')
